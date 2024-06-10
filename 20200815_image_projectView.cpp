@@ -1322,7 +1322,7 @@ void CMy20200815imageprojectView::OnGeometryRotate()
 
 	//역방향 사상
 	for (y = -ydiff; y< pDoc->gImageHeight-ydiff; y++) {
-		for (x = -xdiff; x< pDoc->gImageWidth; x++) {
+		for (x = -xdiff; x< pDoc->gImageWidth-xdiff; x++) {
 			x_source = ((Oy - y) - Cy) * sin(radian) + (x - Cx) * cos(radian) + Cx;
 			y_source = Oy - (((Oy - y) - Cy) * cos(radian) - (x - Cx) * sin(radian) + Cy);
 			if (pDoc->depth == 1) {
