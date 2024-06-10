@@ -445,8 +445,8 @@ void CMy20200815imageprojectView::OnPixelTwoImageSubtraction()
 	for (y = 0; y < pDoc->ImageHeight; y++)
 		for (x = 0; x < pDoc->ImageWidth * pDoc->depth; x++)
 		{
-			value = abs(pDoc->InputImg[y][x] * 0.5 - pDoc->InputImg2[y][x] * 0.5);
-			if (value > 20) value = 255;
+			value = abs(pDoc->InputImg[y][x] - pDoc->InputImg2[y][x] );
+			if (value > 150) value = 255;
 			else value = 0;
 			pDoc->ResultImg[y][x] = value;
 		}
