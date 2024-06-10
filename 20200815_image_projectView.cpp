@@ -164,7 +164,7 @@ void CMy20200815imageprojectView::OnDraw(CDC* pDC)
 			{
 				for (x = 0; x < pDoc->ImageWidth; x++)
 				{
-					pDC->SetPixel(x + (pDoc->ImageWidth + 20) * 2, y, RGB(pDoc->ResultImg[y][x],
+					pDC->SetPixel(x + (pDoc->ImageWidth + 20) * 2, y, RGB(pDoc->InputImg2[y][x],
 						pDoc->InputImg2[y][x],
 						pDoc->InputImg2[y][x]));
 				}
